@@ -64,8 +64,7 @@ int main( void )
 	USBHS_RCC_Init( );
 	USBHS_Device_Init( ENABLE );
 	USB_Sleep_Wakeup_CFG( );
-	GPIO_Write(GPIOB, 0xFFFF);
-	GPIO_Write(GPIOC, 0x3FFF);
+	GPIO_Write( GPIOC, 0x000C );
 
 	while(1)
 	{

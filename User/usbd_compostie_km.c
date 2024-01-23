@@ -291,11 +291,11 @@ void KB_Scan_Handle( void )
             usb_flag = 0;
             if(cooked_matrix[0])
             {
-                GPIO_Write( GPIOC, 0x0000 );
+                GPIO_Write( GPIOC, 0x0003 );
             }
             else
             {
-                GPIO_Write( GPIOC, 0x000F );
+                GPIO_Write( GPIOC, 0x000C );
             }
         }
     }
